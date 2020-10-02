@@ -1,0 +1,24 @@
+print("enter your age :")
+age=int(input())
+def check(age):
+    if age>18:
+        print("you are alegible for voting.")
+    elif age==18:
+        print("you have voting id? press y/n :")
+        ans=input()
+        if ans=='y':
+
+            print("enter voter id number.")
+            id=input()
+            if id==1234:
+                print("yes u r alegible.")
+            else:
+                print("wrong number")
+        else:
+            print("plese register first.")
+    else:
+        print("you are not alegibele for voting.")
+check(age)
+print(__name__)
+if __name__ == '__main__':
+    print("main method")
